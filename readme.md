@@ -1,35 +1,35 @@
 # Random Quote Machine
 
-We're going to use jQuery to make a webpage that displays a random quote.
+We're going to use JavaScript to make a webpage that displays a random quote. We'll use the built-in `fetch` method to call an API that will give us quotes. An API means "Application Program Interface", but in web programmer vernacular, it typically means a 3rd party website that gives us some sort of data.
 
 ## Getting Started
 
 * Fork and clone this repository
 * Run `npm install` to install dependencies
   * `npm start` - start the BrowserSync server
-  * `npm run lint:css` - lint CSS
-  * `npm run lint:js` - lint JS
-* Setup your HTML page, and don't forget to include links to the CSS and JS files.
-* Be creative! Both in your choice of quotes and styling. Think about all of those different CSS properties.
-* As a bonus, add a form field and allow people to include their own quotes in your random generator.
+  * This will reload your code every time you save. How convenient!
+  * You need this. See note below.
+* Setup your HTML page, and don't forget to include links to the CSS and JS files!
+* Be creative in your choice of styling. Think about all of those different CSS properties.
+
+> Note: BrowserSync runs a local server on your machine - this means your code will be running on `http://localhost` instead of directly from the file itself.
 
 ## Gathering Quotes
-IMDB and Goodreads are good sources for quotes. Look up a movie, an author or book that you like and see what they have.
-Feel free to google around for any other collection of quotes you feel inspired to use.
 
-- [IMDB quotes from the movie "Rushmore"](http://www.imdb.com/title/tt0128445/quotes?item=qt0429722)
-- [Goodreads quotes from Richard Feynman](https://www.goodreads.com/author/quotes/1429989.Richard_Feynman)
+Your instructor will provide an appropriate API. Stay tuned!
 
 ## Requirements
 
-* Using jQuery, create a webpage that generates a random quote and display it on the page when a button is clicked
-  * Note that you'll want to store quotes in an array, and use `Math.random()` and `Math.floor()` to generate random array indicies.
-  * See MDN for `Math.random` examples: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+* Using HTML, CSS, and JavaScript, create a webpage that displays a random quote on the page when a button is clicked
 * Every time the button is clicked, clear the old quote and replace it with a new random quote.
+* Use the `fetch` function to obtain a quote from your chosen API.
 
 ## Bonus!
 
-* If you've already encountered AJAX or fetch, alter this assignment to use a Quote API to pull quotes 
+* Use the [dad joke API](https://icanhazdadjoke.com/api). 
+  * Note that this requires you to send something in the request header!
+  * Take a look at the [docs](https://icanhazdadjoke.com/api) and see if you can figure it out!
+  * This API also allows you to use images! If you implement this, how will it change your code?
 
 ---
 

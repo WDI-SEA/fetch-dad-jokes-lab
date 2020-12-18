@@ -1,6 +1,6 @@
-# Random Quote Machine
+# Dad Joke Generator
 
-We're going to use JavaScript to make a webpage that displays a random quote. We'll use the built-in `fetch` method to call an API that will give us quotes.
+We're going to use JavaScript to make a webpage that displays a random dad joke. We'll use the built-in `fetch` method to call an API that will give us jokes.
 
 ## Getting Started
 
@@ -8,9 +8,22 @@ We're going to use JavaScript to make a webpage that displays a random quote. We
 * Setup your HTML page, and don't forget to include links to the CSS and JS files!
 * Be creative in your choice of styling. Think about all of those different CSS properties.
 
-## Gathering Quotes
+## Gathering Jokes
 
-Your instructor will provide an appropriate API. Stay tuned!
+* Use the [dad joke API](https://icanhazdadjoke.com/api). 
+  * Note that this requires you to send something in the request header!
+  * Take a look at the [docs](https://icanhazdadjoke.com/api) and see if you can figure it out! Also check out the [fetch docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to see examples of how to add header.
+
+<details>
+<summary>Click to reveal answer!</summary>
+```
+fetch('https://icanhazdadjoke.com/', {
+  headers: {
+    'Accept': 'application/json'
+  }
+})
+```
+</details>
 
 ## Requirements
 
@@ -19,12 +32,7 @@ Your instructor will provide an appropriate API. Stay tuned!
 * Use the `fetch` function to obtain a quote from your chosen API.
 
 ## Bonus!
-
-* Use the [dad joke API](https://icanhazdadjoke.com/api). 
-  * Note that this requires you to send something in the request header!
-  * Take a look at the [docs](https://icanhazdadjoke.com/api) and see if you can figure it out!
   * This API also allows you to use images! If you implement this, how will it change your code?
-
 ---
 
 ## Licensing

@@ -17,7 +17,7 @@ We're going to use JavaScript to make a webpage that displays a random dad joke.
 <details>
 <summary>Click to reveal answer!</summary>
  
-```
+```javascript
 fetch('https://icanhazdadjoke.com/', {
   headers: {
     'Accept': 'application/json'

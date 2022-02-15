@@ -1,4 +1,4 @@
-# Dad Joke Generator
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Dad Joke Generator
 
 We're going to use JavaScript to make a webpage that displays a random dad joke. We'll use the built-in `fetch` method to call an API that will give us jokes.
 

@@ -28,9 +28,9 @@ fetch('https://icanhazdadjoke.com/', {
 
 ## Requirements
 
-* Using HTML, CSS, and JavaScript, create a webpage that displays a random quote on the page when a button is clicked
-* Every time the button is clicked, clear the old quote and replace it with a new random quote.
-* Use the `fetch` function to obtain a quote from your chosen API.
+* Using HTML, CSS, and JavaScript, create a webpage that displays a random joke on the page when a button is clicked
+* Every time the button is clicked, clear the old joke and replace it with a new random joke.
+* Use the `fetch` function to obtain a joke from your chosen API.
 
 ## Bonus!
   * This API also allows you to use images! If you implement this, how will it change your code?

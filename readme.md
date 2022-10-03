@@ -4,7 +4,7 @@ We're going to use JavaScript to make a webpage that displays a random dad joke.
 
 ## Getting Started
 
-* Fork and clone this repository
+* IF THIS IS A DELIVERABLE: Fork and clone this repository
 * Setup your HTML page, and don't forget to include links to the CSS and JS files!
 * Be creative in your choice of styling. Think about all of those different CSS properties.
 

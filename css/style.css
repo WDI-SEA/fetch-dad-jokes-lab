@@ -1,3 +1,54 @@
 body{
-    background-color: rgb(255, 127, 227);
+    background-image: url("../images/Picture1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
+
+/* The jokes */
+#jokesDiv{
+    position: fixed;
+    margin-left: 40%;
+    margin-top: 5%;
+   
+}
+
+#jokes{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Button */
+#btnDiv{
+    position: fixed;
+    margin-left: 55%;
+    margin-top: 18%;
+}
+
+#submitBtn{
+    background-color: rgba(255, 0, 0, 0.05);
+    cursor: pointer;
+    height: 190px;
+    width: 200px;
+    border: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width: 300px) {
+    #jokes{
+        font-family: 'Fredoka One', cursive;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #btnDiv{
+        position: fixed;
+        margin-left: 55%;
+        margin-top: 12%;
+    }
+
+  }
+

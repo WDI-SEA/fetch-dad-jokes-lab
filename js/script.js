@@ -1,6 +1,6 @@
+//getting the needed elements from HTML
 let jokes = document.getElementById('jokes')
 let submitBtn = document.getElementById('submitBtn')
-
 
 
 //Fetching the jokes 
@@ -17,8 +17,8 @@ fetch(apiURL, {
     return fetchedJoke.json()
 })
 .then(jsonJokes=>{
-console.log(jsonJokes.joke)
-jokes.innerText = jsonJokes.joke
+    console.log(jsonJokes.joke)
+    jokes.innerText = jsonJokes.joke
 
 })
 .catch(err=>{

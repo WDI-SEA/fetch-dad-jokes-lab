@@ -1,0 +1,11 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#dadjokesalert {
+    width:60vw;
+    height:40vh;
+    margin-top: 10px;
+    margin-left: 5%;
+}

@@ -37,18 +37,3 @@ body{
     color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 300px) {
-    #jokes{
-        font-family: 'Fredoka One', cursive;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    #btnDiv{
-        position: fixed;
-        margin-left: 55%;
-        margin-top: 12%;
-    }
-
-  }
-

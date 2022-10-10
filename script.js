@@ -8,12 +8,19 @@ const addJock = (joke)=> {
 }
 
 newJoke.addEventListener('click', function(){
-    fetch(apiURL)
+    fetch(apiURL, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            "Content-Type" : "Application/json",
+        }
+    })
     .then(res=>{
        return res.json();
     })
     .then(res_ => {
-        console.log(res_);
+        console.log(res_.joke);
+        addJock(res_.joke)
     })
     .catch(err=>{
         console.log(err);

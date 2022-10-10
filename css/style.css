@@ -56,3 +56,7 @@ h1 {
 #theJoke {
     font-size: 52px;
 }
+
+#theJokeImg {
+    width: 100%;  
+}

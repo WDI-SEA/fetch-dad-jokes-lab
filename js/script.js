@@ -2,9 +2,15 @@ const jokesForm = document.querySelector('#jokesForm')
 
 const theJoke = document.querySelector('#theJoke')
 
+const theJokeImg = document.querySelector('#theJokeImg')
 
 const addJokeToHTML = (joke) => {
     theJoke.innerText = joke
+}
+
+const addJokeImageToHTML = (joke) => {
+    let imgSrc = `https://icanhazdadjoke.com/j/${joke}.png`
+    theJokeImg.src = imgSrc
 }
 
 
@@ -24,6 +30,7 @@ const generateJoke = () => {
     }) 
     .then(jsonJokes => {
         addJokeToHTML(jsonJokes.joke)
+        addJokeImageToHTML(jsonJokes.id)
     })
     .catch(err => {
         console.log("No jokes found", err)

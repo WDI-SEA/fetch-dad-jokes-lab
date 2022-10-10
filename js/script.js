@@ -2,37 +2,39 @@ let jokes = document.getElementById('jokes')
 let submitBtn = document.getElementById('submitBtn')
 
 
-const getJoke = (person) =>{
-    let name = person.name.first + " " + person.name.last 
-    //create new li element
-    let newListItem = document.createElement('li')
-    //add the name to the li
-    newListItem.innerText = name
-    //append the li to the ul using the id (poepleList)
-    poepleList.appendChild(newListItem)
-}
-
-
 
 //Fetching the jokes 
+const fetchJokes = () => {
 const apiURL = 'https://icanhazdadjoke.com/'
 fetch(apiURL, {
-  headers: {
-    'Accept': 'application/json'
-  }
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+        "Content-Type" : "Application/json",
+    }
 })
 .then(fetchedJoke=>{
-
     return fetchedJoke.json()
 })
 .then(jsonJokes=>{
 console.log(jsonJokes.joke)
+jokes.innerText = jsonJokes.joke
+
 })
 .catch(err=>{
     console.log(err)
 })
 
 
-const clearJoke =() =>{
+}//end of fetchJokes function 
+
+//Function that clears the old joke.
+const clearJokes =() =>{
     jokes.innerHTML = ""
 }
+
+submitBtn.addEventListener('click', (e)=>{
+    e.preventDefault()
+    clearJokes()
+    fetchJokes()
+} )

@@ -1,3 +1,58 @@
 body {
-    background-color: aqua;
+    background-color: #ebfcff;
+    background-image: url('../images/Background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#title {
+    background-color: #ebfcff;
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+
+
+    width: 800px;
+    height: 700px;
+    overflow: auto;
+    border: 2px solid rgb(247, 250, 110);
+    display: block;
+    text-align: center;
+    background: rgba(247, 250, 110, 0.7);
+    border-radius: 30px;
+}
+
+
+#generate-joke {
+    width: 185px;
+    height: 52px;
+    background: #FF0000;
+    border-radius: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    text-align:center;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto auto auto;  
+    cursor: pointer;
+}
+
+
+#theJoke {
+    font-size: 52px;
 }

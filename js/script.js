@@ -25,16 +25,17 @@ fetch('https://icanhazdadjoke.com/', {
 
 }
 
+const clear= () => {
+   
+    theJoke.innerText = ""
+}
 
 DadJoke.addEventListener('click', ()=>{
     fetchjoke()
     sound.play()
+    clear()
 })
 
-const clearList = () => {
-   
-    theJoke.innerText = ""
-}
 
 
 

@@ -18,8 +18,9 @@ const fetchJokes = () => {
         return fetchedJokesObj.json()
     })
     .then(jsonJokes=>{
-        console.log(jsonJokes.results)
-        jsonJokes.results.forEach(addJoke)
+        console.log(jsonJokes.joke)
+        addJoke(jsonJokes.joke)
+        // jsonJokes.results.forEach(addJoke)
     })
     .catch(err=>{
         console.log(err)
@@ -35,7 +36,7 @@ const clear = () => {
 }
 
 
-generateBtn.addEventListener("submit", (e)=>{
+generateBtn.addEventListener("click", (e)=>{
     e.preventDefault()
     clear()
     fetchJokes()

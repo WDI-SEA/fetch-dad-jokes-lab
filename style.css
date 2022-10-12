@@ -1,0 +1,11 @@
+div{
+    width: 80%;
+    height: auto;
+    border: 1px solid black ;
+    margin: auto;
+    padding: 1vw;
+}
+
+button{
+    margin: 2% 20% 0 80%;
+}

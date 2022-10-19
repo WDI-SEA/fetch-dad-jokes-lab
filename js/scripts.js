@@ -21,9 +21,12 @@
 //     }
     
 //     jokesButton.addEventListener("click", ()=>{
-//         jokeFcn()
-        
-//     })
+  //         jokeFcn()
+  
+  //     })
+  
+  let textJoke = document.querySelector("#displayed-joke")
+  const jokeBtn = document.querySelector("#jokeBtn")
 
 let laughters = new Audio ("mixkit-laughing-teenager-428.wav")
 
@@ -41,10 +44,9 @@ const jokeFetch = ()=>{
    textJoke.innerText=jokes.joke 
  })}
 
-
-let textJoke = document.querySelector("#displayed-joke")
-const jokeBtn = document.querySelector("#jokeBtn")
 jokeBtn.addEventListener("click", ()=>{
-   jokeFetch()
-   laughters.play()
+   
+   
 })
+jokeFetch()
+laughters.play()

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				// append the p tag to the joke container
 				jokeContainer.append(p)
 
-				// make a fetch request and return it from this .then
+				// create and append the image
 				const imageUrl = `https://icanhazdadjoke.com/j/${jokeData.id}.png`
 				const image = new Image()
 				image.src = imageUrl
